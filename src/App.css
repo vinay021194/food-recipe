@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700&display=swap");
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  
+}
+/* 
+body{
+   min-height: 100%; 
+  background:url("/dsds.jfif");
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;  
+  background-position: fixed; 
+  
+} */
+
+html {
+  font-size: 62.5%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   /* background:url('food.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;  
+   height: 100%; */
+  
+}
+.APPLICATION{
+  background:url("/dsds.jfif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+  height:300rem;
+}
+.logo{
+  /* margin-right: 10px; */
+}
+
+
+h1 {
+  font-size: 8rem;
+  letter-spacing: 0.1rem;
+  font-style: italic;
+  color: #40b48e;
+  text-shadow: 0 0.2rem 5rem rgb(119, 115, 115);
+   text-transform: uppercase; 
+  margin: 4rem 0;
+}
+
+.search-form {
+  width: 60rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: '';
+  border-radius: 0.5rem;
+  margin-bottom: 5rem;
+ /* box-shadow: 0rem 0rem 0.5rem 0.5rem rgb(180, 178, 178 );  */
+  position:relative;
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.alert {
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  /* background-color: rgb(233, 72, 72); */
+  width: calc(100% - 0.4rem);
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  
+}
+.logo{
+  margin-top: 10px;
+}
+
+.alert h3 {
+  font-size: 1.8rem;
+  color: rgb(187, 12, 12);
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.search-form input {
+  font-size: 1.6rem;
+  border: none;
+  border: 0.1rem solid lightblue;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  height: 3rem;
+background-color: rgb(249, 254, 255);
+}
+
+/* 
+.search-form input :focus {
+   background-color: lightblue;
+  border: lightblue;
+  transition: 0.50s;
+
+} */
+
+
+.search-form input[type="text"] {
+  padding: 0 0.5rem;
+  width: 60%;
+  color: #555;
+  
+}
+
+.search-form input[type="text"]:focus {
+  background-color: rgb(210, 231, 238);
+  border: 1px solid rgb(76, 197, 238);
+  
+}
+
+.search-form input[type="submit"] {
+  width: 20%;
+  /* text-transform: uppercase; */
+  background-color: #40b48e;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #40b48e;
+
+}
+.search-form input[type="submit"]:hover{
+  background-color: rgb(25, 202, 143);
+  transition: 0.50s;
+}
+
+.search-form input[type="reset"] {
+  width: 20%;
+  /* text-transform: uppercase; */
+  background-color: rgb(209, 87, 87);
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #b44e40;
+
+}
+.search-form input[type="reset"]:hover{
+  background-color:  #b44e40;
+  transition: 0.50s;
+}
+
+
+.recipes {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.recipe {
+  width: 20rem;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  padding: 2rem;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0rem 0.5rem 0.5rem rgb(180, 178, 178 );
+}
+
+
+.recipe h2 {
+  background-color: rgba(116, 114, 114, 0.7);
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  right: 2.5rem;
+  font-size: 2rem;
+  font-weight: 280;
+  text-shadow: 0 0.5rem 0.5rem #555;
+  color: #fff;
+}
+
+.recipe img {
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.recipe a {
+  font-size: 1.8rem;
+  color: #40b48e;
+}
+
+.recipe button {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #40b48e;
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.ingredient-list {
+  margin-top: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.ingredient-list li {
+  margin: 0.5rem 0;
+}
+
+.ingredient-text {
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.ingredient-weight {
+  color: #40b48e;
+  font-size: 1.3rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: -850px;
+  margin-top: 10px;
+  
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(19, 18, 18);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2324257e;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #a8a8b156;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.dark-mode{
+  background-color: rgba(49, 47, 47, 0.836);
+  color: rgb(207, 200,200);
+  background:url("/fooods.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;  
+  background-position: fixed; 
+  height:300rem;
+}
